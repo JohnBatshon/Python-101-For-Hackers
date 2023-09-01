@@ -111,7 +111,28 @@ print(type(1 + 1))
 print("1" + "1")
 print(type("1" + "1"))
 
+# Using a placeholder {}
+print("String4 is {} characters long!".format(len(string4)))
 
+# Using multiple placeholders to list Strings, Floats, and Hexidecimal Numbers
+print("{} {} {}".format(len(string4), 5.0, 0x12))
+print("{0} {2} {1}".format(len(string4), 5.0 , 0x12))
+
+print("{length}".format(length=len(string4)))
+
+# Setting the varable of length as len(string4) then printing in the length into the next line
+length = len(string4)
+print(f"string4 is {length} character long!")
+
+# Printing as an integer.
+print("string4 is {length} characters long!".format(length=len(string4)))
+
+# Printing as a float with multiple examples showing longer decimal numbers.
+print("string4 is {length:.1f} characters long!".format(length=len(string4)))
+print("string4 is {length:.2f} characters long!".format(length=len(string4)))
+print("string4 is {length:.3f} characters long!".format(length=len(string4)))
+print("string4 is {length:.4f} characters long!".format(length=len(string4)))
+print("string4 is {length:.5f} characters long!".format(length=len(string4)))
 
 
 
