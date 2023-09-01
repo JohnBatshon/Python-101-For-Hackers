@@ -134,8 +134,15 @@ print("string4 is {length:.3f} characters long!".format(length=len(string4)))
 print("string4 is {length:.4f} characters long!".format(length=len(string4)))
 print("string4 is {length:.5f} characters long!".format(length=len(string4)))
 
+# Hex
+print("string4 is {length:x} characters long!".format(length=len(string4)))
 
+# Binary
+print("string4 is {length:b} characters long!".format(length=len(string4)))
 
+# Octal
+print("string4 is {length:o} characters long!".format(length=len(string4)))
 
-
-
+print("string4 is %d characters long!" % len(string4))
+print("string4 is %f characters long!" % len(string4))
+print("string4 is %x characters long!" % len(string4))
