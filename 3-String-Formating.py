@@ -84,6 +84,20 @@ messy_string2 = "Messy,String!"
 print(messy_string2)
 print(messy_string2.split(","))
 
+string4 = "I am a string!"
+print(string4)
+print(string4.encode())
+print(string4.encode("utf-8"))
+
+# Right Adjust to 25 characters total since the string was short additional spaces were added to the left.
+print(string4.rjust(25))
+print(string4.rjust(25, "X"))
+
+# I assume this did the same but added the spaces to the end or right side of the string.
+print(string4.ljust(25))
+print(string4.ljust(25, "X"))
+
+
 
 
 
