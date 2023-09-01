@@ -72,3 +72,30 @@ print(tuple_items.index("item1"))
 print(tuple_items.index("item2"))
 print(tuple_items.index("item3"))
 
+# Printing out the information indexed at 0,1,2
+
+print(tuple_items[0])
+print(tuple_items[1])
+print(tuple_items[2])
+
+# Tuple Length
+
+print(len(tuple_items))
+
+# Print Last Item in Tuple
+
+print(tuple_items[-1])
+print(tuple_items[-2])
+
+# Slicing Tuple
+
+print(tuple_items [0:2])
+print(tuple_items [:2])
+print(tuple_items [1:2])
+print(tuple_items [-3:-1])
+
+# Off Topic, but to show different examples of slicing.
+
+string1 = "I am a string!"
+print(string1[0:4])
+print(string1[-1])
