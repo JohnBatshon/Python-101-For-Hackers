@@ -49,3 +49,24 @@ print("string" in string4)
 # In string7 it is infact true that "string" shows up which prints out "false"
 print("string" in string7)
 
+# Example using the .startswith command to show true or false statements if the string starts with the specified character
+print(string4.startswith("I"))
+print(string4.startswith("n"))
+
+# Example using the .index command to indicate what character # starts the phrase specified "string"
+# The output is 6 because there are 6 characters before the word string in string4
+# "I"m a string"
+print(string4.index("string"))
+
+# How to force a string into upper and lower case letters
+print(string4.upper())
+print(string4.lower())
+
+# Example showing how to remove extra spaces in a messy string with the .strip command
+messy_string = "   Messy String!   "
+print(messy_string)
+print(messy_string.strip())
+
+
+
+
