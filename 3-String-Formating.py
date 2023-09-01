@@ -103,6 +103,17 @@ print("I am "+ "a string")
 # print("String 4 is " + len(string4) + " characters long!")
 print("String 4 is " + str(len(string4)) + " characters long!")
 
+# Showing the difference of adding 2 intergers versus 2 strings
+# Interger adds the 2 numbers together resulting in = 2
+# 2 Strings being added together resulting in = 11
+print(1 + 1)
+print(type(1 + 1))
+print("1" + "1")
+print(type("1" + "1"))
+
+
+
+
 
 
 
