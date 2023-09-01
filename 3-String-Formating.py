@@ -63,9 +63,26 @@ print(string4.upper())
 print(string4.lower())
 
 # Example showing how to remove extra spaces in a messy string with the .strip command
-messy_string = "   Messy String!   "
+messy_string = "   Messy string!   "
 print(messy_string)
 print(messy_string.strip())
+
+# Example of changing the ! to a ? using the .replace command. 
+print(messy_string.replace("!","?"))
+
+# Example of chaining in the .replace & .strip command to complete both tasks
+print(messy_string.replace("!","?").strip())
+
+# Example of using the .replace to change out a whole word
+print(messy_string.replace("string","example"))
+
+# Example of splitting the string based on the space between the 2 words.
+print(messy_string.split())
+
+# Example of splitting the string based on a comma
+messy_string2 = "Messy,String!"
+print(messy_string2)
+print(messy_string2.split(","))
 
 
 
