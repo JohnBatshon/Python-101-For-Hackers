@@ -97,6 +97,12 @@ print(string4.rjust(25, "X"))
 print(string4.ljust(25))
 print(string4.ljust(25, "X"))
 
+# Concatinating 2 strings together
+print("I am "+ "a string")
+
+# print("String 4 is " + len(string4) + " characters long!")
+print("String 4 is " + str(len(string4)) + " characters long!")
+
 
 
 
