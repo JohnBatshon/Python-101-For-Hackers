@@ -140,12 +140,16 @@ print(bin(x | y)[2:].rjust(4,"0"))
 
 print("_-_-_-_-_")
 
+# Bit Shift 1-4 >> Right
+
 print(bin(x >> 1)[2:].rjust(4,"0"))
 print(bin(x >> 2)[2:].rjust(4,"0"))
 print(bin(x >> 3)[2:].rjust(4,"0"))
 print(bin(x >> 4)[2:].rjust(4,"0"))
 
 print("_-_-_-_-_")
+
+# Bit Shift 1-4 << Left
 
 print(bin(x << 1)[2:].rjust(4,"0"))
 print(bin(x << 2)[2:].rjust(4,"0"))
