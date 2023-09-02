@@ -32,4 +32,38 @@
 # conditions encountered during runtime.
 # ########################################################################################################################
 
+# This command will print true whenever the statement is true. In this case it would be true.
+# Result: True
+
+if True:
+    print("True")
+
+# This command will print false whenever the statement is false. Because this statement will never be false it will never print.
+# Result: True
+
+if False:
+    print("False")
+
+# This command will print "Not False" when the statement is not False.
+# Results:
+# True
+# Not False
+
+if not False:
+    print("Not False")
+
+# In the below statement if the statement is true then the following would be printed "1 < 1".
+# Result: Because the state is not true it will not print.
+
+if 1 < 1:
+    print("1 < 1")
+
+# In the below statement if 1 is less than or equal to 1 (1 <= 1) then print "1 <= "
+# In this case it is True that 1 is equal to one so the following will happen.
+# Result: 1 <= 1
+
+elif 1 <= 1:
+    print("1 <= 1")
+
+#
 
