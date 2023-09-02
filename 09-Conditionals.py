@@ -134,9 +134,22 @@ if 1 >= 1:
 else:
     print("1 > 1")
 
+# Another simple example
+# Result: 2
 
+if 0 > 1:
+    print("1")
+elif 0 < 1:
+    print("2")
+else:
+    print("3")
 
+# Same as the above command.
+# Result: 2
 
+print("1") if 0 > 1 else print("2") if 0 < 1 else print("3")
 
+# Another variant of the example making it to the else statement
+# Result: 3
 
-
+print("1") if 0 > 1 else print("2") if 0 > 1 else print("3")
