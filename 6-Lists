@@ -153,6 +153,48 @@ print(list4)
 list4.sort(reverse=True)
 print(list4)
 
+# When copying a list from a list the data in both lists will change causing unintended issues
+# In the example below we changed a value in list5 and then printed list 4 & 5 and they bow show the change.
+
+list5 = list4
+print(list5)
+print(list4)
+
+list5[2] = "X"
+print(list5)
+print(list4)
+
+# To overcome the problem above using the .copy command will assist with this problem.
+# In the below example we sucessfully changed the data in list 6 without modifying the data in list 4
+
+list6 = list4.copy()
+print(list4)
+print(list6)
+
+list6[2] = "A"
+print(list4)
+print(list6)
+
+# Creating a new list (list7)
+
+list7 = ["1", "2", "3"]
+print(list7)
+
+# Using the map command
+# map(float, list7) applies the float function to each element in list7.
+# This means it attempts to convert each element in list7 to a floating-point number (decimal number).
+# For example, if list7 is [1, 2, 3], map(float, list7) would result in the iterable [1.0, 2.0, 3.0].
+# list(...) converts the result of the map operation into a new list.
+# So, list8 will be a new list containing the elements from list7, but with each element converted to a floating-point number.
+#
+# list7 = ["1.1", "2.2", "3.3"]
+# list8 = list(map(float, list7))
+# print(list8)  # Output: [1.1, 2.2, 3.3]
+#
+# In this example, list8 will contain floating-point numbers derived from the string representations in list7.
+
+list8 = list(map(float, list7))
+print(list8)
 
 
 
