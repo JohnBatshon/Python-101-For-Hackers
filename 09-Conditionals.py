@@ -65,5 +65,69 @@ if 1 < 1:
 elif 1 <= 1:
     print("1 <= 1")
 
-#
+# Should either of the above commands not be true then the following else statement would print "No Statement is True"
+# In this example the else statement would never be called unless varables are changed in the previous lines.
+
+else:
+    print("No Statement is True")
+
+# Expanding on the above example we add in a 2nd elif and intentionally make sure the first elif is not true forcing it to go to the
+# next line. Because 2 is >= to 2 the following will print "2 >= 2"
+# Result: 2 >= 2
+
+if 1 < 1:
+    print("1 < 1")
+elif 1 > 1:
+    print("1 > 1")
+elif 2 >= 2:
+    print("2 >= 2")
+else:
+    print("No Statement is True")
+
+# In this example we are using 2 statements connected by the "and" command. In order for this statement to be True both
+# statements must be true otherwise it will be False
+# Results: 1 > 0 and 0 < 1
+
+if 1 > 0 and 0 < 1:
+    print("1 > 0 and 0 < 1")
+
+# In this example only 1 of the statements is true so it is considered False triggering the "No Statement is True" message.
+# Result: No Statement is True
+
+if 1 > 0 and 0 > 1:
+    print("1 > 0 and 0 > 1")
+else:
+    print("No Statement is True")
+
+# Using the or option in place of the and option allows 1 of the 2 statements to be true preventing the else statement from being used.
+# Results: 1 > 0 or 0 < 1
+
+if 1 > 0 or 0 > 1:
+    print("1 > 0 or 0 < 1")
+else:
+    print("No Statement is True")
+
+# In the below example only 1 of the 2 statements to the left of the and have to be true in addition to the 1 statement on the right
+# also has to be true for the "1 > 0 or 0 < 1 and 1 == 1" statement to print.
+# Results: 1 > 0 or 0 < 1 and 1 == 1
+
+if (1 > 0 or 0 > 1) and 1 == 1:
+    print("1 > 0 or 0 < 1 and 1 == 1")
+else:
+    print("No Statement is True")
+
+# Shorter version of a previous command.
+# Results: 0 < 1
+
+if 0 < 1: print("0 < 1")
+
+# Another shortened version example.
+# Result: 1 >= 1
+
+print("1 >= 1") if 1 >= 1 else print ("1 < 1")
+
+
+
+
+
 
