@@ -126,6 +126,15 @@ if 0 < 1: print("0 < 1")
 
 print("1 >= 1") if 1 >= 1 else print ("1 < 1")
 
+# Same example as above just formated into something easier to read.
+# Results: 1 >= 1
+
+if 1 >= 1:
+    print("1 >= 1")
+else:
+    print("1 > 1")
+
+
 
 
 
