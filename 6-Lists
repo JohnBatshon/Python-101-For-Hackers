@@ -1,0 +1,21 @@
+# ##############################################################################################################################
+# Lists
+# ##############################################################################################################################
+#
+# A data structure that stores a collection of items.
+# Ordered and mutable, meaning you can change its elements.
+# Created using square brackets, like my_list = [1, 2, 3].
+# Supports various operations like appending, slicing, and sorting.
+# Allows mixed data types within the same list.
+# Accessed by index, starting at 0.
+# 
+# Example Code
+#
+# my_list = [1, 2, 3]
+# my_list.append(4)
+# print(my_list)  # Output: [1, 2, 3, 4]
+#
+# Lists are a fundamental part of Python's data structures.
+#
+# ##############################################################################################################################
+
