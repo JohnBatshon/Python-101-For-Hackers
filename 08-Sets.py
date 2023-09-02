@@ -28,3 +28,55 @@ set1 = {"a", "b", "c"}
 print(set1)
 print(type(set1))
 
+# Sets cannot be printed by index because they are not indexed. The below command will trigger an error.
+# print(set1[0])
+# TypeError: 'set' object is not subscriptable
+
+# Sets will not retain duplicate values.
+# Example: set2 = {"a", "a", "a"}
+# Results: {'a'}
+
+set2 = {"a", "a", "a"}
+print(set2)
+print(len(set2))
+
+# Sets can hold different data types i.e. Strings, Integers, Booleans
+# Results: {0, True, 'a'}
+
+set3 = {"a", 0, True}
+print(set3)
+
+# Another example
+# Results: {'b', 1, False}
+
+set4 = set(("b", 1, False))
+print(set4)
+
+# Adding a value to a set with the .add command
+# Results:
+# {'c', 'a', 'b'}
+# {'c', 'd', 'a', 'b'}
+
+print(set1)
+set1.add("d")
+print(set1)
+
+# Updating Sets with the .update command
+# In the below command we are updating set3 with set4 to pull in the values of set4 into set3
+# Sets cannot have duplicates so only unique data is added.
+# Results:
+# {0, True, 'a'}
+# {False, 1, 'b'}
+# {0, True, 'b', 'a'}
+
+print(set3)
+print(set4)
+set3.update(set4)
+print(set3)
+
+#
+
+
+
+
+
