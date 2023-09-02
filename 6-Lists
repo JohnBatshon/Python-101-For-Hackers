@@ -19,3 +19,57 @@
 #
 # ##############################################################################################################################
 
+# Simple List showing basic data
+
+list1 = ["A", "B", "C", "D", "E", "F"]
+print(list1)
+
+# List example showing many types of data from Strings, Integers, Floats, Boolean
+
+list2 = ["A", 1, 2.0, ["A"], [], list(), ("A"), False]
+print(list2)
+print(type(list2))
+
+# Printing out single items from the list
+# Example Printing First Item in a List [0]
+# Example Printing Last Item in a list [-1]
+
+print(list1[0])
+print(list1[-1])
+
+# In the example below the printed results will be the same for the following reasons
+# When printing the item indexed at spot 3 the starting point is set at 0 wich is the first index point.
+# Setting that index point at -1 also will generate the same results.
+
+print(list2[3][0])
+print(list2[3][-1])
+
+# Example of changing the first item in the list from its original value A to its new value of X
+
+list1[0] = "X"
+print(list1)
+
+# Example showing deleting the first index of list 1
+
+print(list1)
+del list1[0]
+print(list1)
+
+# Adding back in the previous value of A into List1 Index 0
+
+list1.insert(0, "A")
+print(list1)
+
+# Removing the newly added "A" from Index 0
+# Make sure to check your work and select the correct index
+# I had mistakenly used index 1 thinking it was index 0
+# I had to go back and fix this after reviewing unexpected results
+
+del list1[0]
+print(list1)
+
+# Adding the recently removed "A" from Index 0
+
+list1 = ["A"] + list1
+print(list1)
+
