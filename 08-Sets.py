@@ -74,9 +74,57 @@ print(set4)
 set3.update(set4)
 print(set3)
 
-#
+# Using updating a set with the .update command from a stored list.
+# Results:
+# ['a', 'b', 'c']
+# {4, 5, 6}
+# {4, 5, 6, 'b', 'c', 'a'}
 
+list1 = ["a", "b", "c"]
+set4 = {4, 5, 6}
+print(list1)
+print(set4)
 
+set4.update(list1)
+print(set4)
 
+# Using the .union command we can create a new set using set4.union(set5)
+# The results of set 6 should be the data from set4 + set5
+# Results:
+# {'a', 4, 5, 6, 'b', 'c'}
+# {8, 9, 7}
+# {'a', 4, 5, 6, 'b', 8, 9, 7, 'c'}
 
+set5 = {7, 8, 9}
+set6 = set4.union(set5)
+print(set4)
+print(set5)
+print(set6)
+
+# Using the .remove command from a set
+# Results:
+# {4, 5, 6, 'a', 'c', 'b'}
+# {5, 6, 'a', 'c', 'b'}
+
+print(set4)
+set4.remove(4)
+print(set4)
+
+# Using .discard will remove the specified value without throwing out an error if the value doesn't exist
+# Results
+# {5, 6, 'a', 'b', 'c'}
+# {5, 6, 'a', 'c'}
+
+print(set4)
+set4.discard("b")
+print(set4)
+
+# Although .pop can be used to remove data since a set's data can be random you will not have control over what is actually removed.
+# Results:
+# {'a', 'd', 'c', 'b'}
+# {'d', 'c', 'b'}
+
+print(set1)
+set1.pop()
+print(set1)
 
