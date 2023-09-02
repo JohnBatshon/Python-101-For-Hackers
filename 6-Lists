@@ -106,6 +106,15 @@ print(list1)
 list1 = list1[::-1]
 print(list1)
 
+# Using the .count command will count how many matching objects are indexed in the list
+# Additionally I have appended an additional A and then reran the command and the result changed from 1 to 2
+
+print(list1.count("A"))
+list1.append("A")
+print(list1)
+print(list1.count("A"))
+
+
 
 
 
