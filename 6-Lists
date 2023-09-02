@@ -73,3 +73,40 @@ print(list1)
 list1 = ["A"] + list1
 print(list1)
 
+# Using the .append command we can add in another item to our list at the end.
+# In this example I have appended "G" to list1
+
+list1.append("G")
+print(list1)
+
+# Printing Lists "Max" and "Min" (i.e. the beginding and end of a list)
+# Printing max will print the last index in the list
+# Printing min will print the first index in the list
+
+print(max(list1))
+print(min(list1))
+
+# How to Identify the index number of data in a field using the .index command
+
+print(list1.index("C"))
+print(list1[list1.index("C")])
+
+# Printing a list in reverse with .reverse
+
+print(list1)
+list1.reverse()
+print(list1)
+
+# Reversing a list can be done with this method causing the list to be printed from the end towards the begining.
+# [::-1] is a slicing operation that specifies a start, stop, and step value for indexing the list.
+# So, when you execute list1 = list1[::-1], it creates a reversed copy of list1 and assigns it back to list1.
+# As a result, list1 will now contain its elements in reverse order.
+# For example, if list1 was initially [1, 2, 3, 4], after this operation, it will become [4, 3, 2, 1].
+
+list1 = list1[::-1]
+print(list1)
+
+
+
+
+
