@@ -95,12 +95,23 @@ print(v)
 
 def function10():
     print("hello from function10")
-    
-
-# def function10():
-#    print("hello from function 10")
 
 def function11():
-    function10()    
-    print("hello from function 11")
+    function10()
+    print("hello from function11")
 
+function11()
+
+def function12(x):
+    print(x)
+    if x > 0:
+        function12(x-1)
+
+function12(5)
+
+def function13(x):
+    while x >= 0:
+        print(x)
+        x -= 1
+
+function13(5)
