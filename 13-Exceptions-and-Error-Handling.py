@@ -27,14 +27,14 @@
 print(1)
 print(2)
 
-try:
-    abdfsdjfslkfsd
+#try:
+#    abdfsdjfslkfsd
 
-except:
-    print("The file does not exist!")
+#except:
+#    print("The file does not exist!")
 
 try:
-    RandomGarbageText
+#    RandomGarbageText
     f = open("Made_up_file_name.txt")
 except FileNotFoundError:
     print("The file does not exist!")
